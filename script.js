@@ -86,10 +86,15 @@ function decreaseSpeed(){
 }
 function toggleSpin(){
     const vinyl = document.getElementById("vinyl");
-    if(!spin)
+    const arm = document.getElementById("arm");
+    if(!spin){
+        arm.style.animation="shake .3s infinite";
         vinyl.style.animationPlayState="running";
-    else 
+    }
+    else {
         vinyl.style.animationPlayState="paused";
+        arm.style.animation = "armOn forwards .0s linear";
+    }
     spin=!spin;
 }
 function toggleArm(){
