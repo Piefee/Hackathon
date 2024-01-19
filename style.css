@@ -1,0 +1,234 @@
+body {
+    translate:0 -5vw;
+    overflow: hidden; /* Hide scrollbars */
+  }
+#choose{
+    position:absolute;
+    z-index:40;
+    margin:0;
+    padding:0;
+    translate:-1.5vw 59vw;
+    height:10vw;
+    width:105vw;
+}
+#title{
+    text-align: center;
+    translate: 0 11vw;
+    font-size: 5vw;
+    width:100vw;
+    height:0vw;
+    z-index:40;
+    white-space: nowrap; 
+}
+.cover{
+position:absolute;
+  width: 50vw;
+  height:0vw;
+  transform: translate(0,39vw);
+  z-index:50;
+}
+#table{
+    position:absolute;
+    translate:-5000vw -1.5vw;
+    z-index: -10;
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 10000vw;
+    height: 70vw;
+}
+#stand{
+    position:absolute;
+    width:70vw;
+    margin-left:15vw;
+    padding:0;
+    position: absolute;
+}
+#vinyl{
+    z-index:4;
+    width:40vw;
+    translate:23.2vw 7vw;
+    position:absolute;
+    animation:spin 10s infinite linear;
+    animation-play-state:paused;
+}
+#arm{
+    transform: rotate(-30deg);
+    width:70vw;
+    z-index:5;
+    margin-left:33vw;
+    margin-top:8vw;
+    padding:0;
+    position: absolute;
+}
+#arm1{
+    padding:0;
+    position: absolute;
+    transform: rotate(-58deg);
+    translate:55vw 44vw;
+    z-index: 10;
+    width:22vw;
+    height:4vw;
+}
+#arm2{
+    padding:0;
+    position: absolute;
+    transform: rotate(-18deg);
+    translate:66vw 18vw;
+    z-index: 10;
+    width:4vw;
+    height:20vw;
+
+}
+/*buttons*/
+#switch{
+    font-size: 1vw;
+    padding:0;
+    position: absolute;
+    translate:72.5vw 42.5vw;
+    z-index: 10;
+    width:3vw;
+    height:2vw;
+    
+}
+#dec{
+    position:absolute;
+    font-size:1vw;
+    width:3.5vw;
+    height:2vw;
+    z-index:10;
+    translate:72.25vw 31vw;
+}
+#inc{
+    position:absolute;
+    font-size:1vw;
+    width:3.5vw;
+    height:2vw;
+    z-index:10;
+    translate:72.25vw 29vw;
+}
+.col{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+@keyframes armOn {
+    0% {
+        margin-left:32.5vw;
+        margin-top:7vw;
+        transform: rotate(-30deg);
+      }
+      50%{
+        margin-left:28.25vw;
+        margin-top:5.5vw;
+        transform: rotate(-15deg);
+      }
+      100% {
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(0deg);
+      }
+}
+@keyframes armOff {
+    100% {
+        margin-left:32.5vw;
+        margin-top:7vw;
+        transform: rotate(-30deg);
+      }
+      50%{
+        margin-left:28.25vw;
+        margin-top:5.5vw;
+        transform: rotate(-15deg);
+      }
+      0% {
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(0deg);
+      }
+}
+@keyframes diskOn{
+    from{
+        height:50vw;
+        transform: translate(0,49vw);
+    }
+    to{
+        height:50vw;
+        transform: translate(0, -2vw);
+    }
+}
+@keyframes diskOff{
+    to{
+        height:50vw;
+        transform: translate(0,49vw);
+    }
+    from{
+        height:50vw;
+        transform: translate(0, -2vw);
+    }
+}
+@keyframes coverOn{
+    from{
+        height:0vw;
+        transform: translate(0,49vw);
+    }
+    to{
+        height:50vw;
+        transform: translate(0, -2vw);
+    }
+}
+@keyframes coverOff{
+    to{
+        height:0vw;
+        transform: translate(0,49vw);
+    }
+    from{
+        height:50vw;
+        transform: translate(0, -2vw);
+    }
+}
+@keyframes hoverOn{
+    from{
+        height:0vw;
+        transform: translate(0,49vw);
+    }
+    to{
+        height:50vw;
+        transform: translate(0, -2vw);
+    }
+}
+@keyframes hoverOff{
+    from{
+        transform: translate(0 -5vw);
+    }
+    to{
+        transform: translate(0 0);
+    }
+}
+@keyframes selectOn{
+    100% {
+        translate: -2vw -1vw;
+        height:70vw;
+      }
+      0% {
+        height:10vw;
+        translate: -2vw 59vw;
+      }
+}
+@keyframes selectOff{
+    0% {
+        translate: -2vw -1vw;
+        height:70vw;
+      }
+      100% {
+        height:10vw;
+        translate: -2vw 59vw;
+      }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
