@@ -2,12 +2,6 @@ body {
     translate:0 -5vw;
     overflow: hidden; /* Hide scrollbars */
   }
-#bg{
-    z-index:-90;
-    width:900vw;
-    height:900vw;
-    translate:450vw 450vw;
-}
 #choose{
     position:absolute;
     z-index:40;
@@ -15,7 +9,7 @@ body {
     padding:0;
     translate:-1.5vw 59vw;
     height:10vw;
-    width:105vw;
+    width:150vw;
 }
 #title{
     text-align: center;
