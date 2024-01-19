@@ -10,26 +10,28 @@
         <script src="script.js" async defer></script>
     </head>
     <div>
-        
+        <div id="title" class="cover">^</div>
+        <audio loop id="audio" src="Audio/cover0.mp3 "></audio>
          <img src="Sprites/table.jfif" id="table">
          <img src="Sprites/stand.png" id="stand">
          <img src="Sprites/arm.png" id="arm">
          <img src="Sprites/cover0.png" id="vinyl">
-         <button onclick="toggleSpin()" id="switch">></button>
-         <button onclick="toggleArm()" class="col" id="arm1"></button>
-         <button onclick="toggleArm()" class="col" id="arm2"></button>
-         <div id="speed">
+        <img src="Sprites/Select.png" id="choose">
+         <div>
+             <button onclick="toggleSpin()" id="switch">></button>
+             <button onclick="toggleArm()" class="col" id="arm1"></button>
+             <button onclick="toggleArm()" class="col" id="arm2"></button>
+        </div>
+        <div id="speed">
             <button onclick="increaseSpeed()" id="inc">>>|</button>
             <button onclick="decreaseSpeed()" id="dec"><<|</button>
         </div>
-        <img src="Sprites/Select.png" id="choose">
-        <img id="cover0" class="cover" src="Sprites/cover0.png">
-        <img id="cover1" class="cover"src="Sprites/cover1.png">
-        <img id="cover2" class="cover"src="Sprites/cover2.png">
-        <img id="cover3" class="cover"src="Sprites/cover3.png">
-        <img id="cover4" class="cover"src="Sprites/cover4.png">
-        <div id="title" class="cover">^</div>
-        <audio loop id="audio" src="Audio/cover0.mp3 "></audio>
-        <img src="Sprites/Select.png" id="bg">
+        <div>
+            <img id="cover0" class="cover" src="Sprites/cover0.png">
+            <img id="cover1" class="cover"src="Sprites/cover1.png">
+            <img id="cover2" class="cover"src="Sprites/cover2.png">
+            <img id="cover3" class="cover"src="Sprites/cover3.png">
+            <img id="cover4" class="cover"src="Sprites/cover4.png">
+        </div>
     </div>
 </html>
