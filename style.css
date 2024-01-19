@@ -2,6 +2,12 @@ body {
     translate:0 -5vw;
     overflow: hidden; /* Hide scrollbars */
   }
+#bg{
+    z-index:-90;
+    width:900vw;
+    height:900vh;
+    translate:450vw 450vh;
+}
 #choose{
     position:absolute;
     z-index:40;
