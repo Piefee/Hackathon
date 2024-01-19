@@ -5,8 +5,8 @@ body {
 #bg{
     z-index:-90;
     width:900vw;
-    height:900vh;
-    translate:450vw 450vh;
+    height:900vw;
+    translate:450vw 450vw;
 }
 #choose{
     position:absolute;
