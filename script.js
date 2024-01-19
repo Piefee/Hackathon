@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
 window.addEventListener("mousemove", (event)=>{
     const sel = document.getElementById("choose");
     const title=document.getElementById("title");
-    if(selecting==false&&100*event.clientY/window.innerWidth>54){
+    if(selecting==false&&100*event.clientY/window.innerWidth>48){
         title.textContent="Choose Album";
         for(var i=0;i<5;i++){
             const object=document.getElementById("cover"+i);
