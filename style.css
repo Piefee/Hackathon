@@ -119,6 +119,33 @@ position:absolute;
     border: none !important;
     font-size:0;
 }
+@keyframes shake {
+    0%{
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(.1deg);
+    }
+    25%{
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(-.2deg);
+    }
+    50%{
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(.2deg);
+    }
+    75%{
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(.3deg);
+    }
+    100%{
+        margin-left:24vw;
+        margin-top:3vw;
+        transform: rotate(-.1deg);
+    }
+}
 @keyframes armOn {
     0% {
         margin-left:32.5vw;
