@@ -88,12 +88,14 @@ function toggleSpin(){
     const vinyl = document.getElementById("vinyl");
     const arm = document.getElementById("arm");
     if(!spin){
-        arm.style.animation="shake .3s infinite";
+        if(armOn)
+            arm.style.animation="shake .3s infinite";
         vinyl.style.animationPlayState="running";
     }
     else {
         vinyl.style.animationPlayState="paused";
-        arm.style.animation = "armOn forwards .0s linear";
+        if(armOn)
+            arm.style.animation = "armOn forwards .0s linear";
     }
     spin=!spin;
 }
